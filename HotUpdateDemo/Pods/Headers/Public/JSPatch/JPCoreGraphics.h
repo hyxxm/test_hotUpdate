@@ -1,0 +1,1 @@
+../../../JSPatch/Extensions/CoreGraphics/JPCoreGraphics.h

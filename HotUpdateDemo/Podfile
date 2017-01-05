@@ -1,0 +1,15 @@
+platform:ios, '7.0'
+def pods
+   pod 'JSPatch','1.0'
+   pod 'JSPatch/Extensions','1.0'
+   pod 'HJNetWorkDataCore'
+   pod 'HJPageRouter'
+   pod 'ReactiveCocoa'
+   pod 'ZipArchive'
+   pod 'RNCryptor'
+
+   
+end
+target 'test_HotUpdate' do
+  pods
+end
