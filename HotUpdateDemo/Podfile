@@ -4,7 +4,7 @@ def pods
    pod 'JSPatch/Extensions','1.0'
    pod 'HJNetWorkDataCore'
    pod 'HJPageRouter'
-   pod 'ReactiveCocoa'
+#   pod 'ReactiveCocoa'
    pod 'ZipArchive'
    pod 'RNCryptor'
 
