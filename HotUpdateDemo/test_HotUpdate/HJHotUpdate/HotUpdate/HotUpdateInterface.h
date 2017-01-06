@@ -88,7 +88,7 @@ extern NSBundle* upgradeBundle();
  *  获取文件路径，优先读取更新包文件路径。如果获取不到，则在mainbundle中寻找
  *
  *  @param fileName 文件名
- *  @param ex       扩展名
+ *  @param Extension       扩展名
  *
  *  @return 文件路径
  */
