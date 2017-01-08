@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "HotUpdateDefine.h"
-
 @interface HotUpdateBundleManager : NSObject
 
 /**

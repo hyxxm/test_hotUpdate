@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "HotUpdateDefine.h"
-
+@class RNDecryptor;
+@class RNEncryptor;
 @interface HotUpdateBundleManager : NSObject
 
 /**

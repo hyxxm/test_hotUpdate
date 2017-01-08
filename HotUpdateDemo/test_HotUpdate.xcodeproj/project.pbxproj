@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		75E4F02417041FDEB9B52E96 /* libPods-test_HotUpdate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37583E87833CF21CB0FA43B8 /* libPods-test_HotUpdate.a */; };
+		A10280241E227B6200E0E7AC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A10280181E227B6200E0E7AC /* README.md */; };
+		A10280251E227B6200E0E7AC /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A102801D1E227B6200E0E7AC /* RNCryptor.m */; };
+		A10280261E227B6200E0E7AC /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A102801F1E227B6200E0E7AC /* RNCryptorEngine.m */; };
+		A10280271E227B6200E0E7AC /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A10280211E227B6200E0E7AC /* RNDecryptor.m */; };
+		A10280281E227B6200E0E7AC /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A10280231E227B6200E0E7AC /* RNEncryptor.m */; };
 		A14E8CDC1E1E18B100071DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E8CDB1E1E18B100071DD3 /* main.m */; };
 		A14E8CDF1E1E18B100071DD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E8CDE1E1E18B100071DD3 /* AppDelegate.m */; };
 		A14E8CE21E1E18B100071DD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E8CE11E1E18B100071DD3 /* ViewController.m */; };
@@ -16,19 +21,19 @@
 		A14E8CEA1E1E18B100071DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14E8CE81E1E18B100071DD3 /* LaunchScreen.storyboard */; };
 		A14E8CF51E1E18B100071DD3 /* test_HotUpdateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E8CF41E1E18B100071DD3 /* test_HotUpdateTests.m */; };
 		A14E8D001E1E18B100071DD3 /* test_HotUpdateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E8CFF1E1E18B100071DD3 /* test_HotUpdateUITests.m */; };
-		A1FEB1EA1E1F95C8003E2517 /* HotUpdateBundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1CA1E1F95C8003E2517 /* HotUpdateBundleManager.m */; };
-		A1FEB1EB1E1F95C8003E2517 /* AppDelegate+JSPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1CD1E1F95C8003E2517 /* AppDelegate+JSPatch.m */; };
-		A1FEB1EC1E1F95C8003E2517 /* HotUpdate_NSProgress+HJCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1CF1E1F95C8003E2517 /* HotUpdate_NSProgress+HJCustom.m */; };
-		A1FEB1ED1E1F95C8003E2517 /* HotUpdate_NSTimer+block.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1D11E1F95C8003E2517 /* HotUpdate_NSTimer+block.m */; };
-		A1FEB1EE1E1F95C8003E2517 /* HotUpdateFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1D51E1F95C8003E2517 /* HotUpdateFacade.m */; };
-		A1FEB1EF1E1F95C8003E2517 /* HotUpdateInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1D71E1F95C8003E2517 /* HotUpdateInterface.m */; };
-		A1FEB1F01E1F95C8003E2517 /* HotUpdateJSCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1D91E1F95C8003E2517 /* HotUpdateJSCreator.m */; };
-		A1FEB1F11E1F95C8003E2517 /* HJHotUpdateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1DD1E1F95C8003E2517 /* HJHotUpdateHandler.m */; };
-		A1FEB1F21E1F95C8003E2517 /* HJHotUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1E01E1F95C8003E2517 /* HJHotUpdateModel.m */; };
-		A1FEB1F31E1F95C8003E2517 /* HJDataCoreJPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1E31E1F95C8003E2517 /* HJDataCoreJPExtension.m */; };
-		A1FEB1F41E1F95C8003E2517 /* HJPageRouteJPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1E51E1F95C8003E2517 /* HJPageRouteJPExtension.m */; };
-		A1FEB1F51E1F95C8003E2517 /* JPDocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1E71E1F95C8003E2517 /* JPDocumentPath.m */; };
-		A1FEB1F61E1F95C8003E2517 /* UIImage+upgrade.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FEB1E91E1F95C8003E2517 /* UIImage+upgrade.m */; };
+		A1F72A691E22608F003DB4BE /* HotUpdateBundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A491E22608F003DB4BE /* HotUpdateBundleManager.m */; };
+		A1F72A6A1E22608F003DB4BE /* AppDelegate+JSPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A4C1E22608F003DB4BE /* AppDelegate+JSPatch.m */; };
+		A1F72A6B1E22608F003DB4BE /* HotUpdate_NSProgress+HJCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A4E1E22608F003DB4BE /* HotUpdate_NSProgress+HJCustom.m */; };
+		A1F72A6C1E22608F003DB4BE /* HotUpdate_NSTimer+block.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A501E22608F003DB4BE /* HotUpdate_NSTimer+block.m */; };
+		A1F72A6D1E22608F003DB4BE /* HotUpdateFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A541E22608F003DB4BE /* HotUpdateFacade.m */; };
+		A1F72A6E1E22608F003DB4BE /* HotUpdateInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A561E22608F003DB4BE /* HotUpdateInterface.m */; };
+		A1F72A6F1E22608F003DB4BE /* HotUpdateJSCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A581E22608F003DB4BE /* HotUpdateJSCreator.m */; };
+		A1F72A701E22608F003DB4BE /* HJHotUpdateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A5C1E22608F003DB4BE /* HJHotUpdateHandler.m */; };
+		A1F72A711E22608F003DB4BE /* HJHotUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A5F1E22608F003DB4BE /* HJHotUpdateModel.m */; };
+		A1F72A721E22608F003DB4BE /* HJDataCoreJPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A621E22608F003DB4BE /* HJDataCoreJPExtension.m */; };
+		A1F72A731E22608F003DB4BE /* HJPageRouteJPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A641E22608F003DB4BE /* HJPageRouteJPExtension.m */; };
+		A1F72A741E22608F003DB4BE /* JPDocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A661E22608F003DB4BE /* JPDocumentPath.m */; };
+		A1F72A751E22608F003DB4BE /* UIImage+upgrade.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F72A681E22608F003DB4BE /* UIImage+upgrade.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 /* Begin PBXFileReference section */
 		37583E87833CF21CB0FA43B8 /* libPods-test_HotUpdate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test_HotUpdate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7869C0F6D8DB0DE6946AB763 /* Pods-test_HotUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_HotUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_HotUpdate/Pods-test_HotUpdate.release.xcconfig"; sourceTree = "<group>"; };
+		A10280161E22775300E0E7AC /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		A10280181E227B6200E0E7AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A102801B1E227B6200E0E7AC /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		A102801C1E227B6200E0E7AC /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		A102801D1E227B6200E0E7AC /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		A102801E1E227B6200E0E7AC /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		A102801F1E227B6200E0E7AC /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		A10280201E227B6200E0E7AC /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		A10280211E227B6200E0E7AC /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		A10280221E227B6200E0E7AC /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		A10280231E227B6200E0E7AC /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
 		A14E8CD71E1E18B100071DD3 /* test_HotUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_HotUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E8CDB1E1E18B100071DD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A14E8CDD1E1E18B100071DD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,35 +84,35 @@
 		A14E8CFF1E1E18B100071DD3 /* test_HotUpdateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_HotUpdateUITests.m; sourceTree = "<group>"; };
 		A14E8D011E1E18B100071DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14E8DC91E1E469500071DD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		A1FEB1C81E1F95C8003E2517 /* HotUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdate.h; sourceTree = "<group>"; };
-		A1FEB1C91E1F95C8003E2517 /* HotUpdateBundleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateBundleManager.h; sourceTree = "<group>"; };
-		A1FEB1CA1E1F95C8003E2517 /* HotUpdateBundleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotUpdateBundleManager.m; sourceTree = "<group>"; };
-		A1FEB1CC1E1F95C8003E2517 /* AppDelegate+JSPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JSPatch.h"; sourceTree = "<group>"; };
-		A1FEB1CD1E1F95C8003E2517 /* AppDelegate+JSPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JSPatch.m"; sourceTree = "<group>"; };
-		A1FEB1CE1E1F95C8003E2517 /* HotUpdate_NSProgress+HJCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HotUpdate_NSProgress+HJCustom.h"; sourceTree = "<group>"; };
-		A1FEB1CF1E1F95C8003E2517 /* HotUpdate_NSProgress+HJCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HotUpdate_NSProgress+HJCustom.m"; sourceTree = "<group>"; };
-		A1FEB1D01E1F95C8003E2517 /* HotUpdate_NSTimer+block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HotUpdate_NSTimer+block.h"; sourceTree = "<group>"; };
-		A1FEB1D11E1F95C8003E2517 /* HotUpdate_NSTimer+block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HotUpdate_NSTimer+block.m"; sourceTree = "<group>"; };
-		A1FEB1D21E1F95C8003E2517 /* HotUpdateCreatorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateCreatorInterface.h; sourceTree = "<group>"; };
-		A1FEB1D31E1F95C8003E2517 /* HotUpdateDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateDefine.h; sourceTree = "<group>"; };
-		A1FEB1D41E1F95C8003E2517 /* HotUpdateFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateFacade.h; sourceTree = "<group>"; };
-		A1FEB1D51E1F95C8003E2517 /* HotUpdateFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotUpdateFacade.m; sourceTree = "<group>"; };
-		A1FEB1D61E1F95C8003E2517 /* HotUpdateInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateInterface.h; sourceTree = "<group>"; };
-		A1FEB1D71E1F95C8003E2517 /* HotUpdateInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotUpdateInterface.m; sourceTree = "<group>"; };
-		A1FEB1D81E1F95C8003E2517 /* HotUpdateJSCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateJSCreator.h; sourceTree = "<group>"; };
-		A1FEB1D91E1F95C8003E2517 /* HotUpdateJSCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotUpdateJSCreator.m; sourceTree = "<group>"; };
-		A1FEB1DC1E1F95C8003E2517 /* HJHotUpdateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHotUpdateHandler.h; sourceTree = "<group>"; };
-		A1FEB1DD1E1F95C8003E2517 /* HJHotUpdateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJHotUpdateHandler.m; sourceTree = "<group>"; };
-		A1FEB1DF1E1F95C8003E2517 /* HJHotUpdateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHotUpdateModel.h; sourceTree = "<group>"; };
-		A1FEB1E01E1F95C8003E2517 /* HJHotUpdateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJHotUpdateModel.m; sourceTree = "<group>"; };
-		A1FEB1E21E1F95C8003E2517 /* HJDataCoreJPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDataCoreJPExtension.h; sourceTree = "<group>"; };
-		A1FEB1E31E1F95C8003E2517 /* HJDataCoreJPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataCoreJPExtension.m; sourceTree = "<group>"; };
-		A1FEB1E41E1F95C8003E2517 /* HJPageRouteJPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPageRouteJPExtension.h; sourceTree = "<group>"; };
-		A1FEB1E51E1F95C8003E2517 /* HJPageRouteJPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPageRouteJPExtension.m; sourceTree = "<group>"; };
-		A1FEB1E61E1F95C8003E2517 /* JPDocumentPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDocumentPath.h; sourceTree = "<group>"; };
-		A1FEB1E71E1F95C8003E2517 /* JPDocumentPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDocumentPath.m; sourceTree = "<group>"; };
-		A1FEB1E81E1F95C8003E2517 /* UIImage+upgrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+upgrade.h"; sourceTree = "<group>"; };
-		A1FEB1E91E1F95C8003E2517 /* UIImage+upgrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+upgrade.m"; sourceTree = "<group>"; };
+		A1F72A471E22608F003DB4BE /* HotUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdate.h; sourceTree = "<group>"; };
+		A1F72A481E22608F003DB4BE /* HotUpdateBundleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateBundleManager.h; sourceTree = "<group>"; };
+		A1F72A491E22608F003DB4BE /* HotUpdateBundleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotUpdateBundleManager.m; sourceTree = "<group>"; };
+		A1F72A4B1E22608F003DB4BE /* AppDelegate+JSPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JSPatch.h"; sourceTree = "<group>"; };
+		A1F72A4C1E22608F003DB4BE /* AppDelegate+JSPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JSPatch.m"; sourceTree = "<group>"; };
+		A1F72A4D1E22608F003DB4BE /* HotUpdate_NSProgress+HJCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HotUpdate_NSProgress+HJCustom.h"; sourceTree = "<group>"; };
+		A1F72A4E1E22608F003DB4BE /* HotUpdate_NSProgress+HJCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HotUpdate_NSProgress+HJCustom.m"; sourceTree = "<group>"; };
+		A1F72A4F1E22608F003DB4BE /* HotUpdate_NSTimer+block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HotUpdate_NSTimer+block.h"; sourceTree = "<group>"; };
+		A1F72A501E22608F003DB4BE /* HotUpdate_NSTimer+block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HotUpdate_NSTimer+block.m"; sourceTree = "<group>"; };
+		A1F72A511E22608F003DB4BE /* HotUpdateCreatorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateCreatorInterface.h; sourceTree = "<group>"; };
+		A1F72A521E22608F003DB4BE /* HotUpdateDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateDefine.h; sourceTree = "<group>"; };
+		A1F72A531E22608F003DB4BE /* HotUpdateFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateFacade.h; sourceTree = "<group>"; };
+		A1F72A541E22608F003DB4BE /* HotUpdateFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotUpdateFacade.m; sourceTree = "<group>"; };
+		A1F72A551E22608F003DB4BE /* HotUpdateInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateInterface.h; sourceTree = "<group>"; };
+		A1F72A561E22608F003DB4BE /* HotUpdateInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotUpdateInterface.m; sourceTree = "<group>"; };
+		A1F72A571E22608F003DB4BE /* HotUpdateJSCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotUpdateJSCreator.h; sourceTree = "<group>"; };
+		A1F72A581E22608F003DB4BE /* HotUpdateJSCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotUpdateJSCreator.m; sourceTree = "<group>"; };
+		A1F72A5B1E22608F003DB4BE /* HJHotUpdateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHotUpdateHandler.h; sourceTree = "<group>"; };
+		A1F72A5C1E22608F003DB4BE /* HJHotUpdateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJHotUpdateHandler.m; sourceTree = "<group>"; };
+		A1F72A5E1E22608F003DB4BE /* HJHotUpdateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHotUpdateModel.h; sourceTree = "<group>"; };
+		A1F72A5F1E22608F003DB4BE /* HJHotUpdateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJHotUpdateModel.m; sourceTree = "<group>"; };
+		A1F72A611E22608F003DB4BE /* HJDataCoreJPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDataCoreJPExtension.h; sourceTree = "<group>"; };
+		A1F72A621E22608F003DB4BE /* HJDataCoreJPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataCoreJPExtension.m; sourceTree = "<group>"; };
+		A1F72A631E22608F003DB4BE /* HJPageRouteJPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPageRouteJPExtension.h; sourceTree = "<group>"; };
+		A1F72A641E22608F003DB4BE /* HJPageRouteJPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPageRouteJPExtension.m; sourceTree = "<group>"; };
+		A1F72A651E22608F003DB4BE /* JPDocumentPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDocumentPath.h; sourceTree = "<group>"; };
+		A1F72A661E22608F003DB4BE /* JPDocumentPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDocumentPath.m; sourceTree = "<group>"; };
+		A1F72A671E22608F003DB4BE /* UIImage+upgrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+upgrade.h"; sourceTree = "<group>"; };
+		A1F72A681E22608F003DB4BE /* UIImage+upgrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+upgrade.m"; sourceTree = "<group>"; };
 		F51CA7BF495131AD540420D3 /* Pods-test_HotUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_HotUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test_HotUpdate/Pods-test_HotUpdate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +159,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A10280171E227B6200E0E7AC /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				A10280181E227B6200E0E7AC /* README.md */,
+				A102801A1E227B6200E0E7AC /* RNCryptor */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		A102801A1E227B6200E0E7AC /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				A102801B1E227B6200E0E7AC /* RNCryptor+Private.h */,
+				A102801C1E227B6200E0E7AC /* RNCryptor.h */,
+				A102801D1E227B6200E0E7AC /* RNCryptor.m */,
+				A102801E1E227B6200E0E7AC /* RNCryptorEngine.h */,
+				A102801F1E227B6200E0E7AC /* RNCryptorEngine.m */,
+				A10280201E227B6200E0E7AC /* RNDecryptor.h */,
+				A10280211E227B6200E0E7AC /* RNDecryptor.m */,
+				A10280221E227B6200E0E7AC /* RNEncryptor.h */,
+				A10280231E227B6200E0E7AC /* RNEncryptor.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
 		A14E8CCE1E1E18B100071DD3 = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +209,7 @@
 		A14E8CD91E1E18B100071DD3 /* test_HotUpdate */ = {
 			isa = PBXGroup;
 			children = (
-				A1FEB1C71E1F95C8003E2517 /* HJHotUpdate */,
+				A1F72A461E22608F003DB4BE /* test_hotUpdate2 */,
 				A14E8CDD1E1E18B100071DD3 /* AppDelegate.h */,
 				A14E8CDE1E1E18B100071DD3 /* AppDelegate.m */,
 				A14E8CE01E1E18B100071DD3 /* ViewController.h */,
@@ -209,78 +250,80 @@
 			path = test_HotUpdateUITests;
 			sourceTree = "<group>";
 		};
-		A1FEB1C71E1F95C8003E2517 /* HJHotUpdate */ = {
+		A1F72A461E22608F003DB4BE /* test_hotUpdate2 */ = {
 			isa = PBXGroup;
 			children = (
-				A1FEB1C81E1F95C8003E2517 /* HotUpdate.h */,
-				A1FEB1C91E1F95C8003E2517 /* HotUpdateBundleManager.h */,
-				A1FEB1CA1E1F95C8003E2517 /* HotUpdateBundleManager.m */,
-				A1FEB1CB1E1F95C8003E2517 /* HotUpdateCategory */,
-				A1FEB1D21E1F95C8003E2517 /* HotUpdateCreatorInterface.h */,
-				A1FEB1D31E1F95C8003E2517 /* HotUpdateDefine.h */,
-				A1FEB1D41E1F95C8003E2517 /* HotUpdateFacade.h */,
-				A1FEB1D51E1F95C8003E2517 /* HotUpdateFacade.m */,
-				A1FEB1D61E1F95C8003E2517 /* HotUpdateInterface.h */,
-				A1FEB1D71E1F95C8003E2517 /* HotUpdateInterface.m */,
-				A1FEB1D81E1F95C8003E2517 /* HotUpdateJSCreator.h */,
-				A1FEB1D91E1F95C8003E2517 /* HotUpdateJSCreator.m */,
-				A1FEB1DA1E1F95C8003E2517 /* HotUpdateModel */,
-				A1FEB1E11E1F95C8003E2517 /* JSExtension */,
-				A1FEB1E81E1F95C8003E2517 /* UIImage+upgrade.h */,
-				A1FEB1E91E1F95C8003E2517 /* UIImage+upgrade.m */,
+				A10280171E227B6200E0E7AC /* RNCryptor */,
+				A1F72A471E22608F003DB4BE /* HotUpdate.h */,
+				A1F72A481E22608F003DB4BE /* HotUpdateBundleManager.h */,
+				A1F72A491E22608F003DB4BE /* HotUpdateBundleManager.m */,
+				A1F72A4A1E22608F003DB4BE /* HotUpdateCategory */,
+				A1F72A511E22608F003DB4BE /* HotUpdateCreatorInterface.h */,
+				A1F72A521E22608F003DB4BE /* HotUpdateDefine.h */,
+				A1F72A531E22608F003DB4BE /* HotUpdateFacade.h */,
+				A1F72A541E22608F003DB4BE /* HotUpdateFacade.m */,
+				A1F72A551E22608F003DB4BE /* HotUpdateInterface.h */,
+				A1F72A561E22608F003DB4BE /* HotUpdateInterface.m */,
+				A1F72A571E22608F003DB4BE /* HotUpdateJSCreator.h */,
+				A1F72A581E22608F003DB4BE /* HotUpdateJSCreator.m */,
+				A1F72A591E22608F003DB4BE /* HotUpdateModel */,
+				A1F72A601E22608F003DB4BE /* JSExtension */,
+				A1F72A671E22608F003DB4BE /* UIImage+upgrade.h */,
+				A1F72A681E22608F003DB4BE /* UIImage+upgrade.m */,
+				A10280161E22775300E0E7AC /* Header.h */,
 			);
-			path = HJHotUpdate;
+			path = test_hotUpdate2;
 			sourceTree = "<group>";
 		};
-		A1FEB1CB1E1F95C8003E2517 /* HotUpdateCategory */ = {
+		A1F72A4A1E22608F003DB4BE /* HotUpdateCategory */ = {
 			isa = PBXGroup;
 			children = (
-				A1FEB1CC1E1F95C8003E2517 /* AppDelegate+JSPatch.h */,
-				A1FEB1CD1E1F95C8003E2517 /* AppDelegate+JSPatch.m */,
-				A1FEB1CE1E1F95C8003E2517 /* HotUpdate_NSProgress+HJCustom.h */,
-				A1FEB1CF1E1F95C8003E2517 /* HotUpdate_NSProgress+HJCustom.m */,
-				A1FEB1D01E1F95C8003E2517 /* HotUpdate_NSTimer+block.h */,
-				A1FEB1D11E1F95C8003E2517 /* HotUpdate_NSTimer+block.m */,
+				A1F72A4B1E22608F003DB4BE /* AppDelegate+JSPatch.h */,
+				A1F72A4C1E22608F003DB4BE /* AppDelegate+JSPatch.m */,
+				A1F72A4D1E22608F003DB4BE /* HotUpdate_NSProgress+HJCustom.h */,
+				A1F72A4E1E22608F003DB4BE /* HotUpdate_NSProgress+HJCustom.m */,
+				A1F72A4F1E22608F003DB4BE /* HotUpdate_NSTimer+block.h */,
+				A1F72A501E22608F003DB4BE /* HotUpdate_NSTimer+block.m */,
 			);
 			path = HotUpdateCategory;
 			sourceTree = "<group>";
 		};
-		A1FEB1DA1E1F95C8003E2517 /* HotUpdateModel */ = {
+		A1F72A591E22608F003DB4BE /* HotUpdateModel */ = {
 			isa = PBXGroup;
 			children = (
-				A1FEB1DB1E1F95C8003E2517 /* handler */,
-				A1FEB1DE1E1F95C8003E2517 /* model */,
+				A1F72A5A1E22608F003DB4BE /* handler */,
+				A1F72A5D1E22608F003DB4BE /* model */,
 			);
 			path = HotUpdateModel;
 			sourceTree = "<group>";
 		};
-		A1FEB1DB1E1F95C8003E2517 /* handler */ = {
+		A1F72A5A1E22608F003DB4BE /* handler */ = {
 			isa = PBXGroup;
 			children = (
-				A1FEB1DC1E1F95C8003E2517 /* HJHotUpdateHandler.h */,
-				A1FEB1DD1E1F95C8003E2517 /* HJHotUpdateHandler.m */,
+				A1F72A5B1E22608F003DB4BE /* HJHotUpdateHandler.h */,
+				A1F72A5C1E22608F003DB4BE /* HJHotUpdateHandler.m */,
 			);
 			path = handler;
 			sourceTree = "<group>";
 		};
-		A1FEB1DE1E1F95C8003E2517 /* model */ = {
+		A1F72A5D1E22608F003DB4BE /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A1FEB1DF1E1F95C8003E2517 /* HJHotUpdateModel.h */,
-				A1FEB1E01E1F95C8003E2517 /* HJHotUpdateModel.m */,
+				A1F72A5E1E22608F003DB4BE /* HJHotUpdateModel.h */,
+				A1F72A5F1E22608F003DB4BE /* HJHotUpdateModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
 		};
-		A1FEB1E11E1F95C8003E2517 /* JSExtension */ = {
+		A1F72A601E22608F003DB4BE /* JSExtension */ = {
 			isa = PBXGroup;
 			children = (
-				A1FEB1E21E1F95C8003E2517 /* HJDataCoreJPExtension.h */,
-				A1FEB1E31E1F95C8003E2517 /* HJDataCoreJPExtension.m */,
-				A1FEB1E41E1F95C8003E2517 /* HJPageRouteJPExtension.h */,
-				A1FEB1E51E1F95C8003E2517 /* HJPageRouteJPExtension.m */,
-				A1FEB1E61E1F95C8003E2517 /* JPDocumentPath.h */,
-				A1FEB1E71E1F95C8003E2517 /* JPDocumentPath.m */,
+				A1F72A611E22608F003DB4BE /* HJDataCoreJPExtension.h */,
+				A1F72A621E22608F003DB4BE /* HJDataCoreJPExtension.m */,
+				A1F72A631E22608F003DB4BE /* HJPageRouteJPExtension.h */,
+				A1F72A641E22608F003DB4BE /* HJPageRouteJPExtension.m */,
+				A1F72A651E22608F003DB4BE /* JPDocumentPath.h */,
+				A1F72A661E22608F003DB4BE /* JPDocumentPath.m */,
 			);
 			path = JSExtension;
 			sourceTree = "<group>";
@@ -469,22 +512,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1FEB1F61E1F95C8003E2517 /* UIImage+upgrade.m in Sources */,
-				A1FEB1EF1E1F95C8003E2517 /* HotUpdateInterface.m in Sources */,
+				A10280281E227B6200E0E7AC /* RNEncryptor.m in Sources */,
+				A1F72A751E22608F003DB4BE /* UIImage+upgrade.m in Sources */,
+				A1F72A6E1E22608F003DB4BE /* HotUpdateInterface.m in Sources */,
 				A14E8CE21E1E18B100071DD3 /* ViewController.m in Sources */,
-				A1FEB1F41E1F95C8003E2517 /* HJPageRouteJPExtension.m in Sources */,
-				A1FEB1F21E1F95C8003E2517 /* HJHotUpdateModel.m in Sources */,
-				A1FEB1EB1E1F95C8003E2517 /* AppDelegate+JSPatch.m in Sources */,
+				A1F72A731E22608F003DB4BE /* HJPageRouteJPExtension.m in Sources */,
+				A10280271E227B6200E0E7AC /* RNDecryptor.m in Sources */,
+				A1F72A711E22608F003DB4BE /* HJHotUpdateModel.m in Sources */,
+				A10280251E227B6200E0E7AC /* RNCryptor.m in Sources */,
+				A1F72A6A1E22608F003DB4BE /* AppDelegate+JSPatch.m in Sources */,
 				A14E8CDF1E1E18B100071DD3 /* AppDelegate.m in Sources */,
-				A1FEB1EC1E1F95C8003E2517 /* HotUpdate_NSProgress+HJCustom.m in Sources */,
-				A1FEB1ED1E1F95C8003E2517 /* HotUpdate_NSTimer+block.m in Sources */,
-				A1FEB1F31E1F95C8003E2517 /* HJDataCoreJPExtension.m in Sources */,
-				A1FEB1F01E1F95C8003E2517 /* HotUpdateJSCreator.m in Sources */,
-				A1FEB1EA1E1F95C8003E2517 /* HotUpdateBundleManager.m in Sources */,
-				A1FEB1EE1E1F95C8003E2517 /* HotUpdateFacade.m in Sources */,
-				A1FEB1F51E1F95C8003E2517 /* JPDocumentPath.m in Sources */,
+				A1F72A6B1E22608F003DB4BE /* HotUpdate_NSProgress+HJCustom.m in Sources */,
+				A1F72A6C1E22608F003DB4BE /* HotUpdate_NSTimer+block.m in Sources */,
+				A1F72A721E22608F003DB4BE /* HJDataCoreJPExtension.m in Sources */,
+				A1F72A6F1E22608F003DB4BE /* HotUpdateJSCreator.m in Sources */,
+				A10280241E227B6200E0E7AC /* README.md in Sources */,
+				A1F72A691E22608F003DB4BE /* HotUpdateBundleManager.m in Sources */,
+				A10280261E227B6200E0E7AC /* RNCryptorEngine.m in Sources */,
+				A1F72A6D1E22608F003DB4BE /* HotUpdateFacade.m in Sources */,
+				A1F72A741E22608F003DB4BE /* JPDocumentPath.m in Sources */,
 				A14E8CDC1E1E18B100071DD3 /* main.m in Sources */,
-				A1FEB1F11E1F95C8003E2517 /* HJHotUpdateHandler.m in Sources */,
+				A1F72A701E22608F003DB4BE /* HJHotUpdateHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
