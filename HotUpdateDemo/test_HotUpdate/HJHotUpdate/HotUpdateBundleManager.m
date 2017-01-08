@@ -9,15 +9,15 @@
 #import "HotUpdateBundleManager.h"
 #import "HotUpdate_NSTimer+block.h"
 #import "HJHotUpdateHandler.h"
-#import <HJDataInterface.h>
+#import "HJDataInterface.h"
 //#import "HJCrypt.h"
 #import "HotUpdate_NSProgress+HJCustom.h"
-#import <ZipArchive/ZipArchive.h>
+#import "ZipArchive/ZipArchive.h"
 //#import "HJCommon.h"
 //#import <ReactiveCocoa.h>
 #import <CommonCrypto/CommonDigest.h>
-#import <RNEncryptor.h>
-#import <RNDecryptor.h>
+#import "RNEncryptor.h"
+#import "RNDecryptor.h"
 #import <objc/runtime.h>
 
 #define _HU_ALIAS_KEY_   @"aliasmap"
@@ -123,7 +123,7 @@ void hotUpdate_decryptFile(NSString *inputFilePath ,NSString *outputFilePath , h
     
     // Read the first block to kick things off
     readStreamBlock();
-    
+
 }
 
 

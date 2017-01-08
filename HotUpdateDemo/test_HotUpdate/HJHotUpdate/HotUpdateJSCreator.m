@@ -7,8 +7,8 @@
 //
 
 #import "HotUpdateJSCreator.h"
-#import <JSPatch/JPEngine.h>
-#import <JPCleaner.h>
+#import "JSPatch/JPEngine.h"
+#import "JPCleaner.h"
 
 
 @implementation HotUpdateJSCreator

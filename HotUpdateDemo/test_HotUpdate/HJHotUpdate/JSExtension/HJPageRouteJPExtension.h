@@ -6,7 +6,7 @@
 //  Copyright © 2016年 HeJia. All rights reserved.
 //
 
-#import <JSPatch/JPEngine.h>
+#import "JSPatch/JPEngine.h"
 
 @interface HJPageRouteJPExtension : JPExtension
 

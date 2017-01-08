@@ -9,7 +9,7 @@
 #import "HotUpdateFacade.h"
 #import "HotUpdateBundleManager.h"
 #import "HotUpdateCreatorInterface.h"
-#import <HJDataInterface.h>
+#import "HJDataInterface.h"
 #import <objc/runtime.h>
 //#import <ReactiveCocoa.h>
 //#import "HJWebViewController.h"

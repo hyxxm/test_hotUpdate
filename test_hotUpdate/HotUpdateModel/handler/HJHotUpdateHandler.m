@@ -7,7 +7,7 @@
 //
 
 #import "HJHotUpdateHandler.h"
-#import <NSObject+MJKeyValue.h>
+#import "NSObject+MJKeyValue.h"
 #import "HJDataInterface.h"
 //#import "HJCommon.h"
 #define HotUpdate_HTTPURL @"http://192.168.31.5:8080/v3/"//公司测试环境

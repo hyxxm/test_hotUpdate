@@ -7,7 +7,7 @@
 //
 
 #import "HJDataCoreJPExtension.h"
-#import <HJDataInterface.h>
+#import "HJDataInterface.h"
 
 @implementation HJDataCoreJPExtension
 
