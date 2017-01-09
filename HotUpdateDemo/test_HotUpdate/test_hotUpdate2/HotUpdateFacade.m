@@ -20,7 +20,7 @@
 #define HotUpdate_HJLog(format,...)
 #define HotUpdate_HJAssert(condition, desc, ...)
 #endif
-id dynamicCreate(NSString* className){
+id HotUpdate_dynamicCreate(NSString* className){
     
     Class class = objc_getClass([className UTF8String]);
     if(class == nil) return nil;
@@ -37,7 +37,7 @@ static NSArray *s_clist;
  */
 static NSArray<NSObject<HotUpdateCreatorInterface> *> *creatorList(){
     if(!s_clist){
-        s_clist = @[dynamicCreate(@"HotUpdateJSCreator")];
+        s_clist = @[HotUpdate_dynamicCreate(@"HotUpdateJSCreator")];
     }
     return s_clist;
 }
