@@ -54,7 +54,7 @@ HotUpdate_SYNTHESIZE_SINGLETON_FOR_HEADER(HotUpdateFacade);
  *
  *  @return ViewController
  */
--(UIViewController *) createViewControllerByAlias:(NSString *) alias defaultUrl:(NSString *)strUrl;
+-(UIViewController *) createViewControllerByAlias:(NSString *) alias error:(HotUpdateError) error; ;
 
 /**
  *  检查更新

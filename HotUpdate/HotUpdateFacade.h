@@ -7,26 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "ARCSingletonTemplate.h"
+#import "ARCSingletonTemplate.h"
 #import "HotUpdateDefine.h"
-#define HotUpdate_SYNTHESIZE_SINGLETON_FOR_HEADER(className) \
-\
-+ (className *)shared##className;
 
-#define HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(className) \
-\
-+ (className *)shared##className { \
-static className *shared##className = nil; \
-static dispatch_once_t onceToken; \
-dispatch_once(&onceToken, ^{ \
-shared##className = [[self alloc] init]; \
-}); \
-return shared##className; \
-}
 @interface HotUpdateFacade : NSObject
 
-HotUpdate_SYNTHESIZE_SINGLETON_FOR_HEADER(HotUpdateFacade);
-//SYNTHESIZE_SINGLETON_FOR_HEADER(HotUpdateFacade);
+SYNTHESIZE_SINGLETON_FOR_HEADER(HotUpdateFacade);
 
 /**
  *  根据 className 创建View

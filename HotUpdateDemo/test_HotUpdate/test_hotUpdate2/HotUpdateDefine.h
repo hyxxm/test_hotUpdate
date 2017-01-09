@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define HU_ERROR_CREATE -100
+#define HU_ERROR_DOWNLOAD_CHECKSUM -1001
+#define HU_ERROR_DOWNLOAD_SIZE  -1002
 /**
  *  是否更新的回调
  *

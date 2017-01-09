@@ -6,9 +6,9 @@
 //  Copyright © 2016年 HeJia. All rights reserved.
 //
 
-//#import "AppDelegate.h"
+#import "AppDelegate.h"
 
-@interface AppDelegateJSPatch :NSObject
+@interface AppDelegate (JSPatch)
 
 -(void) JPEngineStart;
 

@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate+JSPatch.h"
-#import "JPEngine.h"
-@implementation AppDelegateJSPatch
+#import <JPEngine.h>
+
+@implementation AppDelegate (JSPatch)
 
 - (void)JPEngineStart{
     [JPEngine startEngine];

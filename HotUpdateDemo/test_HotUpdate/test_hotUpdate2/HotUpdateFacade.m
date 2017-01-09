@@ -159,7 +159,7 @@ HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
     }
 }
 
--(UIViewController *)createViewControllerByAlias:(NSString *)alias defaultUrl:(NSString *)strUrl{
+-(UIViewController *)createViewControllerByAlias:(NSString *)alias error:(HotUpdateError) error{
     NSString *className = [_bundle classNameByAlias:alias];
     //!通过别名获取类名
     if(className != nil && className.length > 0){
@@ -178,6 +178,7 @@ HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
 //        HJWebViewController *webvc = [HJWebViewController new];
 //        [webvc loadUrl:strUrl];
 //        return webvc;
+        if(error) error([NSError errorWithDomain:@"未找到对应的class" code:HU_ERROR_CREATE userInfo:@{@"alias":alias}]);
         return nil;
     }
 }

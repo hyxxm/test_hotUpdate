@@ -20,7 +20,7 @@ UIView *createView(NSString *className , id parent){
 UIViewController *createViewController(NSString *className){
     return [hufacde() createViewController:className];
 }
-//
+
 UIViewController *createViewControllerByAlias(NSString *classAlias, NSString *strUrl){
     return [hufacde() createViewControllerByAlias:classAlias defaultUrl:strUrl];
 }

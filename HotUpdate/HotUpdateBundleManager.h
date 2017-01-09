@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "HotUpdateDefine.h"
-@class RNDecryptor;
-@class RNEncryptor;
+
 @interface HotUpdateBundleManager : NSObject
 
 /**
@@ -31,12 +30,12 @@
 /**
  *  检测更新情况
  *
- *  @param toUpdate     是否开始更新，返回no表示不更新，yes表示开始下载和更新
+ *  @param update     是否开始更新，返回no表示不更新，yes表示开始下载和更新
  *  @param updateInfo 更新进度
  *  @param updated    更新完成
  *  @param error      更新错误
  */
--(void) update:(HotUpdateNeedUpdate)toUpdate progress:(HotUpdateUpdating) updateInfo updated:(HotUpdateUpdated) updated error:(HotUpdateError) error;
+-(void) update:(HotUpdateNeedUpdate) toUpdate progress:(HotUpdateUpdating) updateInfo updated:(HotUpdateUpdated) updated error:(HotUpdateError) error;
 
 /**
  *  结束更新

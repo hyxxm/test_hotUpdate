@@ -2,12 +2,12 @@
 Pod::Spec.new do |s|
 s.user_target_xcconfig = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 s.name = 'test_hotUpdate'
-s.version = '1.0.3'
+s.version = '2.0.0'
 s.license = 'MIT'
 s.summary = 'An HotUpdate framework  on iOS.'
 s.homepage = 'https://github.com/tianyahaijiaoHYX520/test_hotUpdate'
 s.authors = { '' => '' }
-s.source = { :git => 'https://github.com/tianyahaijiaoHYX520/test_hotUpdate.git', :tag => '1.0.3' }
+s.source = { :git => 'https://github.com/tianyahaijiaoHYX520/test_hotUpdate.git', :tag => '2.0.0' }
 s.requires_arc = true
 s.ios.deployment_target = '7.0'
 

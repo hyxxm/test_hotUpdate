@@ -21,9 +21,10 @@ UIViewController *createViewController(NSString *className){
     return [hufacde() createViewController:className];
 }
 //
-UIViewController *createViewControllerByAlias(NSString *classAlias, NSString *strUrl){
-    return [hufacde() createViewControllerByAlias:classAlias defaultUrl:strUrl];
+UIViewController *createViewControllerByAlias(NSString *classAlias, HotUpdateError error){
+    return [hufacde() createViewControllerByAlias:classAlias error:error];
 }
+
 
 void checkUpdate(HotUpdateUpdating updateInfo , HotUpdateUpdated updated , HotUpdateError error){
     //! do nothing

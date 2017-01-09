@@ -49,7 +49,7 @@ extern UIViewController *createViewController(NSString *className);
  *  2.说明viewcontroller没有对应的nib,直接根据类名new返回
  *  3.说明本地更新包中没有对应的viewcontroller，返回一个webviewcontroller，并加载默认的h5地址
  *
- *  @param classAlias  别名
+ *  @param alias  别名
  *  @param strUrl 如别名不存在时，加载的h5地址
  *
  *  @return ViewController
@@ -88,7 +88,7 @@ extern NSBundle* upgradeBundle();
  *  获取文件路径，优先读取更新包文件路径。如果获取不到，则在mainbundle中寻找
  *
  *  @param fileName 文件名
- *  @param Extension       扩展名
+ *  @param ex       扩展名
  *
  *  @return 文件路径
  */

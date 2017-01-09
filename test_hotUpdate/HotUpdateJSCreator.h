@@ -11,10 +11,10 @@
 
 @interface HotUpdateJSCreator : NSObject<HotUpdateCreatorInterface>
 
-- (void)load:(NSArray *)fileArray;
-
--(NSString *)suffixes;
-
--(void) uninstall;
+//- (void)load:(NSArray *)fileArray;
+//
+//-(NSString *)suffixes;
+//
+//-(void) uninstall;
 
 @end

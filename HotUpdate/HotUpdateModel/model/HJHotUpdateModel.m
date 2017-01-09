@@ -7,8 +7,8 @@
 //
 
 #import "HJHotUpdateModel.h"
-#import "MJExtension.h"
-#import "JSPatch/JPEngine.h"
+#import <MJExtension.h>
+
 @interface HJHotUpdateModel ()
 
 @end

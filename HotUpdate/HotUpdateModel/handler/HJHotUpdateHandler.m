@@ -7,10 +7,10 @@
 //
 
 #import "HJHotUpdateHandler.h"
-#import "NSObject+MJKeyValue.h"
+#import <NSObject+MJKeyValue.h>
 #import "HJDataInterface.h"
-//#import "HJCommon.h"
-#define HotUpdate_HTTPURL @"http://192.168.31.5:8080/v3/"//公司测试环境
+#import "HJCommon.h"
+
 @interface HJHotUpdateHandler ()
 
 @end
@@ -24,21 +24,14 @@
     return self;
     // Do any additional setup after loading the view.
 }
--(NSString *)appversion{
-    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    return [infoDictionary objectForKey:@"CFBundleShortVersionString"];
-}
--(NSString *)combineUrl:(NSString *)cmd{
-    return [NSString stringWithFormat:@"%@%@",HotUpdate_HTTPURL,cmd];
-}
--(void)get:(hotUpdate_dataResponse)dataRes error:(hotUpdate_errorResponse)errRes{
+
+-(void)get:(dataResponse)dataRes error:(errorResponse)errRes{
     RequestParam *param = [RequestParam new];
-//    param.url = hotUpdate_combineUrl(@"hotUpdate/hotUpdateVersion");
-    param.url = [self combineUrl:@"hotUpdate/hotUpdateVersion"];
+    param.url = combineUrl(@"hotUpdate/hotUpdateVersion");
     param.type = CACHE_NONE;
     param.cmd = [NSString stringWithFormat:@"hotUpdateVersion"];
     [param.param setValue:@"ios" forKey:@"os"];
-    [param.param setValue:[self appversion] forKey:@"sys"];
+    [param.param setValue:appVersion() forKey:@"sys"];
     
     GetData(param, ^id(id jsonData){
         return [HJHotUpdateModel mj_objectWithKeyValues:jsonData[@"version"]];

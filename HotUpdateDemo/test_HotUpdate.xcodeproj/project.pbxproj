@@ -51,7 +51,6 @@
 /* Begin PBXFileReference section */
 		37583E87833CF21CB0FA43B8 /* libPods-test_HotUpdate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test_HotUpdate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7869C0F6D8DB0DE6946AB763 /* Pods-test_HotUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_HotUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_HotUpdate/Pods-test_HotUpdate.release.xcconfig"; sourceTree = "<group>"; };
-		A10280161E22775300E0E7AC /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		A14E8CD71E1E18B100071DD3 /* test_HotUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_HotUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E8CDB1E1E18B100071DD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A14E8CDD1E1E18B100071DD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -229,7 +228,6 @@
 				A1F72A601E22608F003DB4BE /* JSExtension */,
 				A1F72A671E22608F003DB4BE /* UIImage+upgrade.h */,
 				A1F72A681E22608F003DB4BE /* UIImage+upgrade.m */,
-				A10280161E22775300E0E7AC /* Header.h */,
 			);
 			path = test_hotUpdate2;
 			sourceTree = "<group>";

@@ -9,25 +9,10 @@
 #import "HotUpdateFacade.h"
 #import "HotUpdateBundleManager.h"
 #import "HotUpdateCreatorInterface.h"
-#import "HJDataInterface.h"
+#import <HJDataInterface.h>
 #import <objc/runtime.h>
-//#import <ReactiveCocoa.h>
-//#import "HJWebViewController.h"
-#ifdef DEBUG
-#define HotUpdate_HJLog(format,...) NSLog(format,##__VA_ARGS__)
-#define HotUpdate_HJAssert(condition, desc, ...) NSAssert(condition,desc,##__VA_ARGS__)
-#else
-#define HotUpdate_HJLog(format,...)
-#define HotUpdate_HJAssert(condition, desc, ...)
-#endif
-id dynamicCreate(NSString* className){
-    
-    Class class = objc_getClass([className UTF8String]);
-    if(class == nil) return nil;
-    id instance = [class new];
-    
-    return instance;
-}
+#import "HJWebViewController.h"
+
 static NSArray *s_clist;
 
 /**
@@ -51,7 +36,7 @@ static NSArray<NSObject<HotUpdateCreatorInterface> *> *creatorList(){
 
 @implementation HotUpdateFacade
 
-HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
+SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
 
 -(instancetype)init{
     if(self = [super init]){
@@ -70,8 +55,7 @@ HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
     [self loadAllScript];
     updated(YES);
 #else
-//    @weakify(self)
-    __block __typeof(&*self) weakSelf=self;
+    @weakify(self)
     [_bundle
      update:^bool(NSString *description, NSString *size)
      {
@@ -80,15 +64,15 @@ HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
      progress:updateInfo
      updated:^(bool isUpdated){
          //! 加载脚本
-//         @strongify(self);
-         [weakSelf loadAllScript];
+         @strongify(self);
+         [self loadAllScript];
          updated(isUpdated);
      }
      error:^(NSError *err) {
-//         @strongify(self);
+         @strongify(self);
          hu_error(err);
          //!更新失败 加载老的js包
-         [weakSelf loadAllScript];
+         [self loadAllScript];
      }];
 
 #endif
@@ -138,7 +122,6 @@ HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
 }
 
 -(UIViewController *)createViewController:(NSString *)className{
-    //从热更新中找nibName
     NSString *nibName = [_bundle nibNameByClassName:className];
     id class = objc_getClass([className UTF8String]);
 
@@ -150,7 +133,7 @@ HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
         //! path 为空，则说明viewcontroller没有更新，或者xib没有更新。如果mainbundle中有nib，则从mainbundle中加载
         if(path != nil && path.length != 0){
             UIViewController* vc = [(UIViewController *)[class alloc] initWithNibName:className bundle:[NSBundle mainBundle]];
-            HotUpdate_HJLog(@"%@",vc.nibName);
+            HJLog(@"%@",vc.nibName);
             return vc;
         }else{
             //! nib 为空，则直接new出来
@@ -175,10 +158,9 @@ HotUpdate_SYNTHESIZE_SINGLETON_FOR_CLASS(HotUpdateFacade);
         }
     }else{
         //! 如果更新包中没有此别名，则返回一个webviewcontroller,并且加载默认url
-//        HJWebViewController *webvc = [HJWebViewController new];
-//        [webvc loadUrl:strUrl];
-//        return webvc;
-        return nil;
+        HJWebViewController *webvc = [HJWebViewController new];
+        [webvc loadUrl:strUrl];
+        return webvc;
     }
 }
 

@@ -54,7 +54,7 @@ extern UIViewController *createViewController(NSString *className);
  *
  *  @return ViewController
  */
-extern UIViewController *createViewControllerByAlias(NSString *classAlias, NSString *strUrl);
+extern UIViewController *createViewControllerByAlias(NSString *classAlias,  HotUpdateError error);
 
 /**
  *  检查热更新
