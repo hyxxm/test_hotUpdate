@@ -6,6 +6,7 @@ def pods
    pod 'HJPageRouter'
 #   pod 'ReactiveCocoa'
    pod 'ZipArchive'
+   pod 'RNCryptor','3.0.1'
 
 
    

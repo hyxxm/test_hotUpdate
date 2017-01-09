@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RNCryptor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YTKKeyValueStore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,17 +57,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D611365A6B8BE96719CFB7C526B21DA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3AC670820F597C7132D7D04F733560E8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>7042EA2A10B43030CB8063A96265F360</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85956D057EDA3E2195716DC95686DA35</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>86CD4FFB5BE51D07715C1CE1172E677B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>949B0665DEEB063BCC1AA3E9F9F1AFA6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9940E85CF2CF4B04D945B7A318AF4D26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
