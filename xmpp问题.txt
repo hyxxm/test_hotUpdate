@@ -1,0 +1,5 @@
+NSString+DDXML 和DDXMLNode文件中用#import <libxml2/libxml/tree.h>代替//@import libxml;和//@import libxmlSimu;
+
+注释：module.modulemap里面内容
+
+XMPPSRVResolver文件里面用#import <dns_sd.h>替代//@import dnssd;和//@import dnssdSimu;
